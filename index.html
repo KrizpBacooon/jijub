@@ -56,6 +56,47 @@
                 </div>
             </div>
             
+            <div class="form-group">
+                <label for="serie">6. ¿Cuál es tu serie favorita de todos los tiempos?</label>
+                <input type="text" id="serie" name="serie" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tiempo">7. ¿Cuántas horas a la semana dedicas a ver contenido?</label>
+                <select id="tiempo" name="tiempo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="menos-5">Menos de 5 horas</option>
+                    <option value="5-10">5 a 10 horas</option>
+                    <option value="10-20">10 a 20 horas</option>
+                    <option value="mas-20">Más de 20 horas</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="dispositivo">8. ¿En qué dispositivo ves contenido principalmente?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="dispositivo" value="tv" required> Televisor</label>
+                    <label><input type="radio" name="dispositivo" value="celular"> Celular</label>
+                    <label><input type="radio" name="dispositivo" value="laptop"> Laptop</label>
+                    <label><input type="radio" name="dispositivo" value="tablet"> Tablet</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>9. ¿Qué tipos de contenido te gustan?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="contenido" value="peliculas"> Películas</label>
+                    <label><input type="checkbox" name="contenido" value="series"> Series</label>
+                    <label><input type="checkbox" name="contenido" value="documentales"> Documentales</label>
+                    <label><input type="checkbox" name="contenido" value="anime"> Anime</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="edad">10. ¿Cuántos años tienes?</label>
+                <input type="number" id="edad" name="edad" min="1" max="120" required>
+            </div>
+            
             <button type="submit">Enviar</button>
         </form>
         
