@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preferencias de Entretenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Preferencias de Entretenimiento</h1>
+        <form id="entertainmentForm">
+            <div class="form-group">
+                <label for="nombre">1. ¿Cuál es tu nombre?</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="genero">2. ¿Cuál es tu género de película favorito?</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="accion">Acción</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="drama">Drama</option>
+                    <option value="terror">Terror</option>
+                    <option value="ciencia-ficcion">Ciencia Ficción</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="plataforma">3. ¿Cuál es tu plataforma de streaming preferida?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="plataforma" value="netflix" required> Netflix</label>
+                    <label><input type="radio" name="plataforma" value="amazon"> Amazon Prime</label>
+                    <label><input type="radio" name="plataforma" value="disney"> Disney+</label>
+                    <label><input type="radio" name="plataforma" value="hbo"> HBO Max</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="frecuencia">4. ¿Con qué frecuencia ves películas?</label>
+                <select id="frecuencia" name="frecuencia" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="diariamente">Diariamente</option>
+                    <option value="semanalmente">Semanalmente</option>
+                    <option value="mensualmente">Mensualmente</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>5. ¿Recomendarías tus preferencias a un amigo?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="recomendar" value="si"> Sí</label>
+                    <label><input type="checkbox" name="recomendar" value="no"> No</label>
+                </div>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <div id="resultado" class="resultado"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
